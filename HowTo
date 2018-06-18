@@ -1,0 +1,47 @@
+Say you're working on a project...
+
+After typing out a few initial lines of code you decide this is worth making into a Git repository. 
+
+Go to the directory that you are thinking of making a repository out of and type
+
+git init
+
+This creates the tools that Git needs to track changes.
+Three steps of a Git project are:
+a. Working Directory where files are edited, and organized.
+b. Staging Area where the changes to the working directory are listed.
+c. Repository where the final changes are reflected.
+
+git status to see changes in the Git project.
+
+Now, to add the untracked files to the staging area with command:
+
+git add filename
+
+This sends the file to the staging area.
+
+git diff filename
+
+will give the changes between the working and the staged file. 
+
+Finally, commit this with
+
+git commit -m " //message in present tense, 50 words"
+
+List of the various commits can be seen with 
+
+git log
+
+The commit we are on, is called the HEAD commit. To actually see it:
+
+git show HEAD
+
+Press q to exit the commit log mode.
+
+To remove the changes made in the very last commit
+
+git checkout HEAD filename
+
+git reset HEAD filename 
+
+to reset the staging area
